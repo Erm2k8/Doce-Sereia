@@ -1,0 +1,101 @@
+/* Header */
+@import url('variables.css');
+
+header {
+    height: 80px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+
+    .logo-header {
+        width: 120px;
+        height: 90px;
+    }
+    
+    .logo-header img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .seja-doce-button {
+        transition-duration: 0.2s;
+        background-color: var(--main-pink);
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        
+        a {
+            transition-duration: 0.2s;
+            color: var(--white);
+            font-weight: 500;
+            padding: 12px 20px 12px 20px;
+            display: block;
+        }
+
+        &:hover {
+            transition-duration: 0.2s;
+            background-color: var(--lighter-pink);
+            transform: scale(1.02);
+        }
+    }
+}
+
+
+footer {
+    padding-top: 1.5em;
+    font-size: 16px;
+    width: 100vw;
+    background-color: var(--lighter-cian);
+
+    .footer-content {
+        width: 1140px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .logo-footer {
+            width: 240px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info-wrapper-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: fit-content;
+            gap: 32px;
+
+            .footer-section-title {
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            .pink-underline a {
+                transition-duration: 0.2s;
+                color: black;
+
+                &:hover {
+                    transition-duration: 0.2s;
+                    color: var(--main-pink);
+                }
+            }
+        }
+
+        .credits {
+            margin-top: 1em;
+            hr {
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            p {
+                padding: 16px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
