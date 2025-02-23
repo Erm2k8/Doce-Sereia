@@ -6,40 +6,62 @@
     <title>Doce Sereia</title>
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="container flex-row">
-        <nav class="nav-header">
-            <ul class="flex-row">
-                <li>
-                    <a class="pink-underline" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="pink-underline" href="#">Galeria</a>
-                </li>
-                <li>
-                    <a class="pink-underline" href="#">Sobre</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="">
+        <div class="header-desktop container flex-row">
+            <nav class="nav-header">
+                <ul class="flex-row">
+                    <li>
+                        <a class="pink-underline" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="#">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="#">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <figure class="logo-header">
-            <img src="../assets/vectors/logo-vertical.svg" alt="Logo vertical da Doce Sereia">
-        </figure>
-        <nav class="nav-header flex-row">
-            <ul class="flex-row">
-                <li>
-                    <a class="pink-underline" href="#">Delivery</a>
-                </li>
-                <li>
-                    <a class="pink-underline" href="#">Contato</a>
-                </li>
-            </ul>
+            <figure class="logo-header">
+                <img src="../assets/vectors/logo-vertical.svg" alt="Logo vertical da Doce Sereia">
+            </figure>
+            <nav class="nav-header flex-row">
+                <ul class="flex-row">
+                    <li>
+                        <a class="pink-underline" href="#">Delivery</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="#">Contato</a>
+                    </li>
+                </ul>
 
-            <button class="seja-doce-button">
-                <a href="#">Seja Doce!</a>
-            </button>
-        </nav>
+                <button class="seja-doce-button">
+                    <a href="#">Seja Doce!</a>
+                </button>
+            </nav>
+        </div>
+        <div class="header-mobile">
+            <figure class="logo-header-mobile">
+                <img src="../assets/vectors/logo-horizontal.svg" alt="">
+            </figure>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Seja Doce</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <footer class="flex-column">
@@ -93,6 +115,24 @@
                 <p>Desenvolvido por Amanda Lara e Ermesson Andrade</p>
             </div>
         </div>
-    </footer>
+    </footer> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropbtn = document.querySelector(".dropbtn");
+            var dropdownContent = document.querySelector(".dropdown-content");
+    
+            dropbtn.addEventListener("click", function() {
+                dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+            });
+    
+            window.addEventListener("click", function(event) {
+                if (!event.target.closest(".dropdown")) {
+                    dropdownContent.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
