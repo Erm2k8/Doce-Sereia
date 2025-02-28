@@ -1,0 +1,32 @@
+
+.transition-home-1 {
+    background-color: #FFB7C7;
+}
+
+.transition-home-2 {
+    background-color: #FFFA64;
+}
+
+.know-more-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: stretch; 
+
+    figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .know-more-card {
+        border: 1px solid black;
+    }
+}
+
+.know-more-content figure:first-of-type {
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+    height: 100%;
+}

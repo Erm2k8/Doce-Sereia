@@ -2,7 +2,7 @@
 @import url('variables.css');
 @import url('reset.css');
 @import url('header-footer.css');
-
+@import url('home.css');
 
 body {
   display: flex;
@@ -37,6 +37,10 @@ body {
   align-items: center;
   height: fit-content;
   gap: 32px;
+}
+
+.grid {
+  display: grid;
 }
 
 .pink-underline {
