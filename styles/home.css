@@ -1,7 +1,6 @@
 @import url('variables.css');
 
 section.hero {
-
     .main-image {
         padding-top: 6em;
         width: 50%;
@@ -23,6 +22,11 @@ section.hero {
         flex-direction: column;
         align-items: flex-start;
         width: 60%;
+
+        .flower-bee {
+            width: 4em;
+        }
+        
     }
         
     h1 {
@@ -51,7 +55,11 @@ section.hero {
 
 section.our-icecreams {
     padding: 3em 0;
-    gap: 8em;
+    gap: 2em;
+
+    h1 {
+        margin-bottom: 3em;
+    }
 
     .icecreams-cards-wrapper {
         align-items: stretch;
@@ -91,12 +99,42 @@ section.our-icecreams {
             }
         }
     }
+
+    .all-flavours-button {
+        transition-duration: 0.1s;
+        background-color: var(--main-blue);
+        padding: 6px 40px;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--white);    
+        border-radius: 20px;
+        box-shadow: 0 5px 0px var(--main-pink);
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+
+        &:hover {
+            transition-duration: 0.1s;
+            background-color: var(--darker-blue);
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        img {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
 }
 
 .transition-home-2 {
     background-color: var(--main-yellow);
-    justify-content: space-evenly !important;
-    padding: 1em 0;
+    padding-left: calc((100% - 1140px)/2);
+    padding-right: calc((100% - 1140px)/2);
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     p {
         display: inline;
@@ -107,30 +145,74 @@ section.our-icecreams {
     }
 }
 
-.know-more-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    align-items: stretch; 
+section.know-more {
+    padding: 3em 0;
+    gap: 2em;
 
-    figure img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .know-more-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto auto;
+        gap: 20px;
+        align-items: stretch; 
+    
+        figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    
+        .know-more-card {
+            position: relative;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            min-height: 100%; 
+    
+            padding: 3em 2em;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+    
+            border-radius: 20px;
+    
+            box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.25);
+        
+            figure {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 5%;
+                left: 5%;
+    
+                img {
+                    object-fit: contain;
+                    height: 40px !important;
+                }
+            }
+    
+            h2 {
+                font-size: 1.1em;
+            }
+    
+            p {
+                font-size: 0.9em;
+            }
+        }
+    
+        figure:first-of-type {
+            grid-column: 1 / span 1;
+            grid-row: span 2;
+            height: 100%;
+        }
     }
     
-    .know-more-card {
-        border: 1px solid black;
-    }
 }
 
-.know-more-content figure:first-of-type {
-    grid-column: 1 / span 1;
-    grid-row: span 2;
-    height: 100%;
-}
 
-.flower-bee {
-    width: 4em;
-}
+    
+
