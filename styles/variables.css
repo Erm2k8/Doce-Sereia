@@ -14,4 +14,7 @@
     /* Fonts */
     --main-font: 'Baloo Thambi 2';
     --main-font-size: 1.1em;
+    --title-font-size: 2em;
+    --subtitle-font-size: 1.5em;
+    --paragraph-font-size: 1em;
   }
