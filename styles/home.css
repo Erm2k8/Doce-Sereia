@@ -2,6 +2,8 @@
 
 section.hero {
     .main-image {
+        position: relative;
+
         padding-top: 6em;
         width: 50%;
         background-color: var(--lighter-pink);
@@ -22,6 +24,7 @@ section.hero {
         flex-direction: column;
         align-items: flex-start;
         width: 60%;
+        position: relative;
 
         .flower-bee {
             width: 4em;
@@ -214,5 +217,45 @@ section.know-more {
 }
 
 
-    
+/* Estrelas na home com posição absoluta */
 
+.shine {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.shine-1, .shine-2 {
+    width: 20% !important;
+    height: auto !important;
+}
+
+.shine-1 {
+    top: 60%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.shine-2 {
+    top: 20%;
+    right: 0;
+    transform: translateX(30%);
+}
+
+.shine-3 {
+    transform: translate(60%, 50%);
+    width: 0.7em !important;
+    height: auto !important;
+}
+
+.shine-4 {
+    transform: translate(40%, 15%);
+    width: 0.8em !important;
+    height: auto !important;
+}
+
+.shine-5 {
+    transform: translate(20%, 80%);
+    width: 0.6em !important;
+    height: auto !important;
+}
