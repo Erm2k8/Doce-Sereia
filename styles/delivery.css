@@ -81,6 +81,10 @@ div.search-filter-bar {
 }
 
 section.explore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+
     div.explore-by-category {
         width: 100%;
         padding: 3em 0;
@@ -118,7 +122,105 @@ section.explore {
                 }
             }   
         } 
-            
+    }
 
+    .explore-icecreams {
+        width: 70%;
+        max-width: 70%;
+
+        .explore-tabs fieldset {
+            border: none;
+            display: flex;
+            gap: 14px;
+
+            input[type=radio] {
+                display: none;
+                
+                &:hover + label {
+                    cursor: pointer;
+                }
+                
+                &:checked + label {
+                    font-weight: 600;
+                    color: var(--main-pink);
+                    text-decoration: underline 2px solid var(--main-pink);
+                }
+            }
+            label {
+                user-select: none;
+                font-size: 1.25em;
+            }
+        }
+
+        .icecreams-cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 2em;
+
+            background-color: var(--lighter-pink);
+
+            .icecream-card {
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    }
+
+    .my-order {
+        width: 25%;
+        max-width: 25%;
+
+        padding: 1em;
+
+        border: 2px dashed var(--lighter-gray);
+        border-radius: 20px;
+
+        gap: 0;
+
+        .order-header {
+            width: 100%;
+
+            h1 {
+                font-size: var(--text-font-size);
+                justify-content: start;
+                gap: 6px;
+    
+                img {
+                    width: 1.2em;
+                }
+            }
+        }   
+
+        .order-item {
+            width: 100%;
+
+            figure {
+                width: 50px !important;
+                height: 50px !important;
+                
+                img {
+                    border-radius: 10px;
+                    height: 100%;
+                }
+            }
+
+            .order-info {
+                width: 100%;
+                h2.order-name {
+                    font-size: 1em !important;
+                }
+                p.order-price-quantity {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .finish-order {
+            width: 100%;
+        }
     }
 }
