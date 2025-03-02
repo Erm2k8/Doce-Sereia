@@ -1,6 +1,4 @@
-// Header dropdown
-
-document.addEventListener("DOMContentLoaded", function() {
+function dropdown() {
     var dropbtn = document.querySelector(".dropbtn");
     var dropdownContent = document.querySelector(".dropdown-content");
 
@@ -13,4 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
             dropdownContent.style.display = "none";
         }
     });
-});
+};
+
+export { dropdown };

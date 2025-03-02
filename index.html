@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <header class="">
@@ -53,12 +54,12 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="#">Galeria</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Delivery</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Seja Doce</a>
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Galeria</a>
+                    <a href="about.html">Sobre</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="contact.html">Contato</a>
+                    <a href="register.html">Seja Doce</a>
                 </div>
             </div>
         </div>
@@ -221,26 +222,9 @@
 
             <div class="credits">
                 <hr class="footer-divider flex-column">
-                <p>Desenvolvido por Amanda Lara e Ermesson Andrade</p>
+                <p>&copy; Desenvolvido por Amanda Lara e Ermesson Andrade</p>
             </div>
         </div>
     </footer> 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var dropbtn = document.querySelector(".dropbtn");
-            var dropdownContent = document.querySelector(".dropdown-content");
-    
-            dropbtn.addEventListener("click", function() {
-                dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-            });
-    
-            window.addEventListener("click", function(event) {
-                if (!event.target.closest(".dropdown")) {
-                    dropdownContent.style.display = "none";
-                }
-            });
-        });
-    </script>
 </body>
 </html>
