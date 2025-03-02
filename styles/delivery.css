@@ -1,0 +1,124 @@
+@import url('variables.css');
+
+section.delivery-banner {
+    background-image: url('../assets/others/banner-azul.png');
+    background-size: contain;
+    aspect-ratio: 1140 / 209;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2em 5em;
+
+    border-radius: 20px;
+
+    p, h1 {
+        color: var(--white);
+
+        &:hover {
+            cursor: default;
+            color: var(--white);
+        }
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-decoration-thickness: 5px;
+    }
+
+    p {
+        width: 50%;
+        font-size: 1em;
+    }
+}
+
+div.search-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    padding: 3em 0;
+
+    input[type=text] {
+        width: 40%;
+        padding: 10px;
+        border: 1px solid var(--lighter-gray);
+        border-radius: 20px;
+        margin-right: 10px;
+        font-size: 0.8em;
+
+        background-image: url('../assets/icons/search-icon.png');
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center right 16px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid var(--main-blue);
+        }
+    }
+
+    button.filter-button {
+        border: none;
+        padding: 10px 50px 10px 30px;
+        border-radius: 20px;
+        background-color: var(--main-pink);
+        background-image: url('../assets/icons/filter-icon.png');
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center right 10px;
+        color: var(--white);
+        cursor: pointer;
+        font-size: 0.9em;
+
+        &:hover {
+            background-color: var(--lighter-pink);
+        }
+    }
+}
+
+section.explore {
+    div.explore-by-category {
+        width: 100%;
+        padding: 3em 0;
+        
+        .cateories-wrapper {
+            width: 100%;
+            gap: 0px;
+            justify-content: start;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            div {
+                padding: 4px 0;
+
+                border: 1px solid var(--lighter-gray);
+                border-radius: 10px;
+                width: 19%;
+                gap: 14px;
+                justify-content: left !important;
+
+                img {
+                    z-index: -1;
+                    width: 3em !important;
+                    height: 3em !important;
+                }
+
+                h3 {
+                    font-size: 1.1em;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid var(--main-cian);
+                }
+            }   
+        } 
+            
+
+    }
+}

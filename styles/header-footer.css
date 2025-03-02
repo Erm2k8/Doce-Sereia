@@ -105,7 +105,7 @@ footer {
 @media screen and (max-width: 1140px) {
     header {
         .header-desktop {
-            width: 100%;
+            width: 90vw;
         }
     }
 

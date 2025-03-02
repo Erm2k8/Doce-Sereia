@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="../styles/delivery.css">
 </head>
 <body>
     <header class="">
@@ -65,125 +66,126 @@
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="delivery-banner">
             <h1 class="pink-underline">Peça, saboreie, refresque-se!</h1>
             <p>Escolha seu sabor favorito, faça seu pedido e aproveite cada colherada de refrescância!</p>
         </section>
+
+        <div class="search-filter-bar">
+            <input type="text" placeholder="Buscar um sorvete..." class="search-bar-delivery">
+            <button class="filter-button">Filtrar</button>
+        </div>
+    
+        <section class="explore flex-row container" style="flex-wrap: wrap;">
+            <div class="explore-by-category">
+                <h2>Explore por categorias</h2>
+                <div class="cateories-wrapper flex-row">
+                    <div class="flex-row">
+                        <img src="../assets/icons/category-1.png" alt="Casquinha" class="category-icon">
+                        <h3 class="yellow-underline">Casquinhas</h3>
+                    </div>
+                    <div class="flex-row">
+                        <img src="../assets/icons/category-2.png" alt="Milkshake" class="category-icon">
+                        <h3 class="yellow-underline">Milkshakes</h3>
+                    </div>
+                    <div class="flex-row">
+                        <img src="../assets/icons/category-3.png" alt="Picolé" class="category-icon">
+                        <h3 class="yellow-underline">Picolés</h3>
+                    </div>
+                    <div class="flex-row">
+                        <img src="../assets/icons/category-4.png" alt="Sobremesa" class="category-icon">
+                        <h3 class="yellow-underline">Sobremesas</h3>
+                    </div>
+                    <div class="flex-row">
+                        <img src="../assets/icons/category-5.png" alt="Sorvete caseiro" class="category-icon">
+                        <h3 class="yellow-underline">Caseiro</h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="explore-icecreams">
+                <div class="explore-tabs">
+                    <fieldset>
+                        <input type="radio" name="tabs" id="tab-new">
+                        <label for="tab-new" class="pink-underline">Novidades</label>
+                        <input type="radio" name="tabs" id="tab-popular">
+                        <label for="tab-popular">Populares</label>
+                    </fieldset>
+                </div>
+    
+                <div class="icecreams-cards-wrapper grid">
+                    <div class="icecream-card">
+                        <img src="" alt="Sorvete de Limão" class="icecream-card-img">
+                        <h2 class="icecream-card-title">Sorvete de limão</h2>
+                        <h3 class="icecream-card-price">R$ 5</h3>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="my-order flex-column">
+                <div class="flex-row">
+                    <h1>Meu pedido <img src="../assets/icons/order-icon.png" alt="Ícone de pedido"></h1>
+                </div>
+                
+                <div class="order-item flex-row">
+                    <figure class="order-preview">
+                        <img src="" alt="Preview do Pedido">
+                    </figure>
+                    <div class="order-info">
+                        <h2 class="order-name">Nome do Pedido</h2>
+                        <p class="order-price-quantity">R$ 10<span class="order-price-quantity">x2</span></p>
+                    </div>
+                </div>
+    
+                <hr class="order-divider">
+                
+                <div class="finish-order">
+                    <p class="flex-row"><span>Subtotal</span><span>R$20,00</span></p>
+                    <p class="flex-row"><span>Descontos</span><span>-R$5,00</span></p>
+                    <hr class="finish-order-divider">
+                    <p class="flex-row"><span class="total">Total</span><span class="total">R$15,00</span></p>
+                    <button class="finish-order-button">Finalizar Pedido</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="flow-diagram flex-row">
+            <hr class="flow-diagram-line">
+            <div class="flow-diagram-step flex-column">
+                <figure class="flow-diagram-step-icon">
+                    <img src="" alt="Interrogação">
+                </figure>
+                <p>Escolheu</p>
+            </div>
+            <div class="flow-diagram-step flex-column">
+                <figure class="flow-diagram-step-icon">
+                    <img src="" alt="Ícone de check">
+                </figure>
+                <p>Pediu</p>
+            </div>
+            <div class="flow-diagram-step flex-column">
+                <figure class="flow-diagram-step-icon">
+                    <img src="" alt="Casa">
+                </figure>
+                <p>Chegou</p>
+            </div>
+            <div class="flow-diagram-step flex-column">
+                <figure class="flow-diagram-step-icon">
+                    <img src="" alt="Caixa aberta">
+                </figure>
+                <p>Abriu</p>
+            </div>
+            <div class="flow-diagram-step flex-column">
+                <figure class="flow-diagram-step-icon">
+                    <img src="" alt="Sorriso">
+                </figure>
+                <p>Sorriu</p>
+            </div>
+        </section>
     </main>
 
-    <div class="search-filter-bar">
-        <input type="text" placeholder="Buscar um sorvete..." class="search-bar-delivery">
-        <button>Filtrar</button>
-    </div>
-
-    <section class="explore flex-row container" style="flex-wrap: wrap;">
-        <div class="explore-by-category">
-            <h2>Explore por categorias</h2>
-            <div class="cateories-wrapper flex-row">
-                <div class="flex-row">
-                    <img src="" alt="Casquinha" class="category-icon">
-                    <h3 class="yellow-underline">Casquinhas</h3>
-                </div>
-                <div class="flex-row">
-                    <img src="" alt="Milkshake" class="category-icon">
-                    <h3 class="yellow-underline">Milkshakes</h3>
-                </div>
-                <div class="flex-row">
-                    <img src="" alt="Picolé" class="category-icon">
-                    <h3 class="yellow-underline">Picolés</h3>
-                </div>
-                <div class="flex-row">
-                    <img src="" alt="Sobremesa" class="category-icon">
-                    <h3 class="yellow-underline">Sobremesas</h3>
-                </div>
-                <div class="flex-row">
-                    <img src="" alt="Sorvete caseiro" class="category-icon">
-                    <h3 class="yellow-underline">Caseiro</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="explore-icecreams">
-            <div class="explore-tabs">
-                <fieldset>
-                    <input type="radio" name="tabs" id="tab-new">
-                    <label for="tab-new" class="pink-underline">Novidades</label>
-                    <input type="radio" name="tabs" id="tab-popular">
-                    <label for="tab-popular">Populares</label>
-                </fieldset>
-            </div>
-
-            <div class="icecreams-cards-wrapper grid">
-                <div class="icecream-card">
-                    <img src="" alt="Sorvete de Limão" class="icecream-card-img">
-                    <h2 class="icecream-card-title">Sorvete de limão</h2>
-                    <h3 class="icecream-card-price">R$ 5</h3>
-                    <button class="buy-button">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="my-order flex-column">
-            <div class="flex-row">
-                <h1>Meu pedido <img src="" alt="Ícone de pedido"></h1>
-            </div>
-            
-            <div class="order-item flex-row">
-                <figure class="order-preview">
-                    <img src="" alt="Preview do Pedido">
-                </figure>
-                <div class="order-info">
-                    <h2 class="order-name">Nome do Pedido</h2>
-                    <p class="order-price-quantity">R$ 10<span class="order-price-quantity">x2</span></p>
-                </div>
-            </div>
-
-            <hr class="order-divider">
-            
-            <div class="finish-order">
-                <p class="flex-row"><span>Subtotal</span><span>R$20,00</span></p>
-                <p class="flex-row"><span>Descontos</span><span>-R$5,00</span></p>
-                <hr class="finish-order-divider">
-                <p class="flex-row"><span class="total">Total</span><span class="total">R$15,00</span></p>
-                <button class="finish-order-button">Finalizar Pedido</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="flow-diagram flex-row">
-        <hr class="flow-diagram-line">
-        <div class="flow-diagram-step flex-column">
-            <figure class="flow-diagram-step-icon">
-                <img src="" alt="Interrogação">
-            </figure>
-            <p>Escolheu</p>
-        </div>
-        <div class="flow-diagram-step flex-column">
-            <figure class="flow-diagram-step-icon">
-                <img src="" alt="Ícone de check">
-            </figure>
-            <p>Pediu</p>
-        </div>
-        <div class="flow-diagram-step flex-column">
-            <figure class="flow-diagram-step-icon">
-                <img src="" alt="Casa">
-            </figure>
-            <p>Chegou</p>
-        </div>
-        <div class="flow-diagram-step flex-column">
-            <figure class="flow-diagram-step-icon">
-                <img src="" alt="Caixa aberta">
-            </figure>
-            <p>Abriu</p>
-        </div>
-        <div class="flow-diagram-step flex-column">
-            <figure class="flow-diagram-step-icon">
-                <img src="" alt="Sorriso">
-            </figure>
-            <p>Sorriu</p>
-        </div>
-    </section>
 
     <footer class="flex-column">
         <div class="footer-content">

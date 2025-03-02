@@ -64,12 +64,6 @@ body {
   text-decoration: underline var(--main-yellow);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
-
-  &:hover {
-    transition-duration: 0.2s;
-    color: var(--main-yellow);
-    cursor: pointer;
-  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -81,6 +75,6 @@ body {
   }
 
   .container {
-    width: 600px;
+    width: 90vw;
   }
 }
