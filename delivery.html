@@ -68,7 +68,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="flex-column">
         <section class="delivery-banner">
             <h1 class="pink-underline">Peça, saboreie, refresque-se!</h1>
             <p>Escolha seu sabor favorito, faça seu pedido e aproveite cada colherada de refrescância!</p>
@@ -105,23 +105,27 @@
                     </div>
                 </div>
             </div>
-    
+            
+            <div class="explore-tabs">
+                <fieldset>
+                    <input type="radio" name="tabs" id="tab-new" checked>
+                    <label for="tab-new">Novidades</label>
+                    <input type="radio" name="tabs" id="tab-popular">
+                    <label for="tab-popular">Populares</label>
+                </fieldset>
+            </div>
+
             <div class="explore-icecreams">
-                <div class="explore-tabs">
-                    <fieldset>
-                        <input type="radio" name="tabs" id="tab-new">
-                        <label for="tab-new">Novidades</label>
-                        <input type="radio" name="tabs" id="tab-popular">
-                        <label for="tab-popular">Populares</label>
-                    </fieldset>
-                </div>
-    
                 <div class="icecreams-cards-wrapper grid">
                     <div class="icecream-card">
-                        <img src="" alt="Sorvete de Limão" class="icecream-card-img">
+                        <img src="assets/imgs/sorvete-misto.png" alt="Sorvete de Limão" class="icecream-card-img">
                         <h2 class="icecream-card-title">Sorvete de limão</h2>
-                        <h3 class="icecream-card-price">R$ 5</h3>
+                        <h3 class="icecream-card-price"><span class="rs">R$</span>5,00</h3>
                         <button class="buy-button">Comprar</button>
+                        <div class="icecream-rating">
+                            <img src="assets/icons/rate-icon.svg" alt="Avaliações">
+                            <p>5</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,14 +144,24 @@
                         <p class="order-price-quantity">R$ 10<span class="order-price-quantity">x2</span></p>
                     </div>
                 </div>
-    
-                <hr class="order-divider">
                 
-                <div class="finish-order">
-                    <p class="flex-row"><span>Subtotal</span><span>R$20,00</span></p>
-                    <p class="flex-row"><span>Descontos</span><span>-R$5,00</span></p>
+                <hr class="order-divider">
+
+                <div class="order-item flex-row">
+                    <figure class="order-preview">
+                        <img src="assets/imgs/sorvete-misto.png" alt="Preview do Pedido">
+                    </figure>
+                    <div class="order-info">
+                        <h2 class="order-name">Nome do Pedido</h2>
+                        <p class="order-price-quantity">R$ 10<span class="order-price-quantity">x2</span></p>
+                    </div>
+                </div>
+                
+                <div class="finish-order flex-column">
+                    <p class="flex-row"><span class="subtotal">Subtotal</span><span class="subtotal-value">R$20,00</span></p>
+                    <p class="flex-row"><span class="discount">Descontos</span><span class="discount-value">-R$5,00</span></p>
                     <hr class="finish-order-divider">
-                    <p class="flex-row"><span class="total">Total</span><span class="total">R$15,00</span></p>
+                    <p class="flex-row"><span class="total">Total</span><span class="total-value">R$15,00</span></p>
                     <button class="finish-order-button">Finalizar Pedido</button>
                 </div>
             </div>
@@ -157,31 +171,31 @@
             <hr class="flow-diagram-line">
             <div class="flow-diagram-step flex-column">
                 <figure class="flow-diagram-step-icon">
-                    <img src="" alt="Interrogação">
+                    <img src="assets/icons/interrogation-step.png" alt="Interrogação">
                 </figure>
                 <p>Escolheu</p>
             </div>
             <div class="flow-diagram-step flex-column">
                 <figure class="flow-diagram-step-icon">
-                    <img src="" alt="Ícone de check">
+                    <img src="assets/icons/check-step.png" alt="Ícone de check">
                 </figure>
                 <p>Pediu</p>
             </div>
             <div class="flow-diagram-step flex-column">
                 <figure class="flow-diagram-step-icon">
-                    <img src="" alt="Casa">
+                    <img src="assets/icons/house-step.png" alt="Casa">
                 </figure>
                 <p>Chegou</p>
             </div>
             <div class="flow-diagram-step flex-column">
                 <figure class="flow-diagram-step-icon">
-                    <img src="" alt="Caixa aberta">
+                    <img src="assets/icons/box-step.png" alt="Caixa aberta">
                 </figure>
                 <p>Abriu</p>
             </div>
             <div class="flow-diagram-step flex-column">
                 <figure class="flow-diagram-step-icon">
-                    <img src="" alt="Sorriso">
+                    <img src="assets/icons/smile-step.png" alt="Sorriso">
                 </figure>
                 <p>Sorriu</p>
             </div>

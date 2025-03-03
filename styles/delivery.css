@@ -1,9 +1,14 @@
 @import url('variables.css');
 
+main {
+    gap: 4em !important;
+}
+
 section.delivery-banner {
     background-image: url('../assets/others/banner-azul.png');
     background-size: contain;
     aspect-ratio: 1140 / 209;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -37,10 +42,7 @@ div.search-filter-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
-
-    padding: 3em 0;
+    width: 100%;
 
     input[type=text] {
         width: 40%;
@@ -83,11 +85,14 @@ div.search-filter-bar {
 section.explore {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
+    align-items: start;
 
     div.explore-by-category {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
         width: 100%;
-        padding: 3em 0;
         
         .cateories-wrapper {
             width: 100%;
@@ -124,15 +129,18 @@ section.explore {
         } 
     }
 
-    .explore-icecreams {
-        width: 70%;
-        max-width: 70%;
+    .explore-tabs {
+        width: 100%;
+        margin-bottom: -1.75em;
 
-        .explore-tabs fieldset {
+        fieldset {
             border: none;
             display: flex;
             gap: 14px;
-
+        
+            margin-left: 1.5em;
+            margin-bottom: 0.25em;
+        
             input[type=radio] {
                 display: none;
                 
@@ -142,44 +150,135 @@ section.explore {
                 
                 &:checked + label {
                     font-weight: 600;
-                    color: var(--main-pink);
                     text-decoration: underline 2px solid var(--main-pink);
                 }
             }
             label {
+                font-weight: 500;
                 user-select: none;
-                font-size: 1.25em;
+                font-size: 1.3em;
             }
         }
+    } 
+        
+
+    .explore-icecreams {
+        width: 70%;
+        max-width: 70%;
 
         .icecreams-cards-wrapper {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            padding: 2em;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.15em;
+            padding: 1.5em 2em;
+            border-radius: 20px;
 
             background-color: var(--lighter-pink);
 
             .icecream-card {
+                border: 2px solid #E5E7EB;
+
+                position: relative;
+
+                padding: 0.75em;
+                border-radius: 14px;
+
                 background-color: var(--white);
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: left;
                 justify-content: center;
-                gap: 10px;
+
+                img {
+                    width: 100% !important;
+                    height: 8em !important;
+                    border-radius: 10px;
+
+                    object-fit: cover;
+                    object-position: center top !important;
+                }
+
+                h2 {
+                    margin-top: 0.5em;
+                    margin-bottom: -0.5em;
+                    font-weight: 500;
+                    font-size: 1em;
+                }
+
+                .icecream-card-price {
+                    font-weight: 600;
+                    font-size: 1.2em;
+                    margin-bottom: 0.5em;
+
+                    .rs {
+                        font-size: 0.7em !important;
+                        margin-right: 2px;
+                    } 
+                }
+
+                button {
+                    border: none;
+                    padding: 6px 0;
+                    border-radius: 10px;
+                    background-color: var(--main-pink);
+                    color: var(--white);
+                    cursor: pointer;
+                    font-size: 0.9em;
+                    transition-duration: 0.2s;
+
+                    &:hover {
+                        transition-duration: 0.2s;
+                        background-color: var(--darker-pink);
+                    }
+                }
+
+                div.icecream-rating {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+
+                    background-color: var(--white);
+
+                    top: 0;
+                    right: 0;
+
+                    padding: 5px 20px 2px 10px;
+
+                    border-radius: 10px 10px 0 10px; 
+
+                    img {
+                        width: 1em !important;
+                        height: 1em !important;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        font-weight: 500;
+                        color: var(--black);
+                    }
+                }
             }
         }
     }
 
     .my-order {
-        width: 25%;
-        max-width: 25%;
+        width: 27%;
+        max-width: 27%;
 
         padding: 1em;
 
-        border: 2px dashed var(--lighter-gray);
+        border: 1px solid var(--lighter-gray);
         border-radius: 20px;
 
         gap: 0;
+
+        hr.order-divider {
+            height: 1px;
+            width: 100%;
+            color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.1);
+        }
 
         .order-header {
             width: 100%;
@@ -196,7 +295,11 @@ section.explore {
         }   
 
         .order-item {
+            padding: 0 1em;
+            margin: 1em 0;
             width: 100%;
+
+            gap: 1em;
 
             figure {
                 width: 50px !important;
@@ -210,17 +313,131 @@ section.explore {
 
             .order-info {
                 width: 100%;
+
                 h2.order-name {
                     font-size: 1em !important;
+                    font-weight: 400;
                 }
+
                 p.order-price-quantity {
-                    font-size: 0.8em;
+                    margin-top: -0.5em;
+                    font-size: 1.1em;
+                    font-weight: 500;
+
+                    .order-price-quantity {
+                        margin-left: 3px;
+                        font-size: 0.8em !important;
+                    }
                 }
             }
         }
 
         .finish-order {
+            background-color: var(--lighter-pink);
             width: 100%;
+
+            padding: 1em 2em;
+
+            gap: 0.5em;
+
+            border-radius: 14px;
+            outline: 2px dashed rgba(0, 0, 0, 0.1); 
+
+            p {
+                width: 100%;
+
+                .subtotal, .discount, .total {
+                    font-size: 1em;
+                    font-weight: 400;
+                }
+
+                .subtotal-value, .discount-value, .total-value {
+                    font-weight: 600;
+                }
+
+                .total, .total-value {
+                    font-size: 1.2em;
+                }
+            }
+
+            hr {
+                color: rgba(0, 0, 0, 0.25);
+                background-color: rgba(0, 0, 0, 0.25);
+                width: 100%;
+            }
+
+
+            button.finish-order-button {
+                width: 100%;
+
+                border: none;
+                padding: 6px 0;
+                border-radius: 80px;
+                background-color: var(--main-pink);
+                color: var(--white);
+                cursor: pointer;
+                font-size: 0.9em;
+                transition-duration: 0.2s;
+
+                &:hover {
+                    transition-duration: 0.2s;
+                    background-color: var(--darker-pink);
+                }
+            }
         }
+    }
+}
+
+.flow-diagram {
+    position: relative;
+
+    .flow-diagram-step {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+
+        figure.flow-diagram-step-icon {
+            box-sizing: content-box;
+
+            background-color: var(--main-yellow);
+            border-radius: 50%;
+            padding: 6px;
+
+            width: 35px;
+            height: 35px;
+
+            border-bottom: 4px solid var(--main-cian);
+            border-left: 1px solid var(--main-cian);
+            border-right: 1px solid var(--main-cian);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--black);
+        }
+    }
+
+    hr {
+        position: absolute;
+        height: 3px;
+        background-color: var(--main-cian);
+        color: var(--main-cian);
+        width: 97%;
+        left: 3%;
+        top: calc(50px / 2);
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .flow-diagram {
+        width: 80%;
     }
 }
