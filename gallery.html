@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gallery.css">
     <script src="scripts/main.js"></script>
 </head>
 <body>
@@ -65,8 +66,93 @@
         </div>
     </header>
 
-    <main>
-        
+    <main class="container flex-column">
+        <section class="gallery-header flex-column">
+            <h1>Nossa Galeria</h1>
+            <p>As melhores lembranças, tanto nossas quanto de nossos clientes, estão guardadas aqui.</p>
+            <button>Compartilhe sua memória favorita conosco</button>
+        </section>
+
+        <section class="photos-container flex-row grid">
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery1.jpg" alt="Mulheres rindo e tomando sorvete">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery2.jpg" alt="Criança tomando sorvete na colherzinha">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery3.jpg" alt="Família de clientes com Gabi">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery4.jpg" alt="Clientes com Gabi">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery5.jpg" alt="Mulher tomando sorvete">
+                </figure>
+            </div>
+
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery6.jpg" alt="Clientes conversando">
+                </figure>
+            </div>
+
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery7.jpg" alt="Mãe e filho vendo a placa de sabores">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery8.jpg" alt="Clientes com Gabi">
+                </figure>
+            </div>
+            
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery9.jpg" alt="Mulher tomando sorvete">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery10.jpg" alt="Moça sorrindo">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery11.jpg" alt="PEDRO DAVI DE LIMA FERNANDES">
+                </figure>
+            </div>
+
+            <div class="gallery-photo-wrapper">
+                <figure class="gallery-photo">
+                    <img src="assets/imgs/image_gallery12.png" alt="Moça atrás de flores">
+                </figure>
+            </div>
+        </section>
+
+        <div id="imageModal">
+            <img src="" alt="" id="modalImg">
+            <p id="modalText"></p>
+        </div>
     </main>
 
     <footer class="flex-column">
@@ -121,5 +207,7 @@
             </div>
         </div>
     </footer> 
+
+    <script src="scripts/zoomImage.js"></script>
 </body>
 </html>

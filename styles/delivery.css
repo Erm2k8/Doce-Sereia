@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 main {
-    gap: 4em !important;
+    gap: 3em !important;
 }
 
 section.delivery-banner {
