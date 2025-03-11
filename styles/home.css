@@ -37,6 +37,10 @@ section.hero {
         font-family: 'Barrio';font-size: 3.5em;
     }
 
+    h1.responsive-title {
+        display: none;
+    }
+
     .hero-section-subtext {
         width: 60%;
     }
