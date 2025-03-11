@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <header class="">
+        <div class="header-desktop container flex-row">
+            <nav class="nav-header">
+                <ul class="flex-row">
+                    <li>
+                        <a class="pink-underline" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="gallery.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="about.html">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <figure class="logo-header">
+                <a href="index.html">
+                    <img src="assets/vectors/logo-vertical.svg" alt="Logo vertical da Doce Sereia">
+                </a>
+            </figure>
+            <nav class="nav-header flex-row">
+                <ul class="flex-row">
+                    <li>
+                        <a class="pink-underline" href="delivery.html">Delivery</a>
+                    </li>
+                    <li>
+                        <a class="pink-underline" href="contact.html">Contato</a>
+                    </li>
+                </ul>
+
+                <button class="seja-doce-button">
+                    <a href="register.html">Seja Doce!</a>
+                </button>
+            </nav>
+        </div>
+        <div class="header-mobile">
+            <figure class="logo-header-mobile">
+                <img src="assets/vectors/logo-horizontal.svg" alt="">
+            </figure>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Galeria</a>
+                    <a href="about.html">Sobre</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="contact.html">Contato</a>
+                    <a href="register.html">Seja Doce</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="first-section container">
+            <div class="Login">
+                <h1>Bem-vindo de volta!</h1>
+                <p>Que tal adoçar o seu dia com um sorvete delicioso?</p>
+                <p><a href="register.html">Clique aqui se ainda não tiver uma conta.</a></p>
+                <form class="login-form" action="#">
+                    <label for="usuario">Nome do usuário ou Email 
+                        <input type="text" id="usuario" placeholder="E-mail ou nome de usuário">
+                    </label><br>
+                    <label for="senha">Senha <br>
+                        <input type="password" id="senha" placeholder="Escolha sua senha">
+                    </label>
+                    <div id="conected-button">
+                    <input type="checkbox" id="conectado">
+                    <label for="conectado">Me mantenha conectado</label>
+                    </div>
+                    <input type="submit" id="enviar" value="Entrar!"> 
+                    <p>ou</p>
+                    <input type="submit" id="google" value="Continue com Google"> 
+                </form>
+            </div>
+            <figure class="vector1"><img src="assets/others/image_login.png" alt="figura"></figure>
+        </div>
+    </main>
+
+    <footer class="flex-column">
+        <div class="footer-content">
+            <figure class="logo-footer">
+                <img src="assets/vectors/logo-horizontal.svg" alt="Logo Horizontal da Doce Sereia">
+            </figure>
+    
+            <div class="info-wrapper-footer">
+                <!-- ADICIONAR ÍCONES COM FONT AWESOME DEPOIS -->
+                <div class="footer-discover">
+                    <ul>
+                        <li class="footer-section-title">Conheça</li>
+                        <li class="pink-underline">
+                            <i></i><a href="delivery.html">Delivery</a>
+                        </li>
+                        <li class="pink-underline">
+                            <i></i><a href="gallery.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-findout-more">
+                    <ul>
+                        <li class="footer-section-title">Saiba mais</li>
+                        <li class="pink-underline">
+                            <a href="contact.html">Contato</a>
+                        </li>
+                        <li class="pink-underline">
+                            <a href="about.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <ul>
+                        <li class="footer-section-title">Conecte-se</li>
+                        <li class="pink-underline">
+                            <i></i><a target="_blank" href="https://www.instagram.com/docesereiasorvetes/">@docesereiasorvetes</a>
+                        </li>
+                        <li class="pink-underline">
+                            <i></i><a target="_blank" href="tel:+5584998332040">(84) 9 8833-2040</a>
+                        </li>
+                        <li class="pink-underline">
+                            <i></i><a target="_blank" href="https://maps.app.goo.gl/mbs2X7UTCmA4CGFN6">R. Afonso Magalhães, 129 - Ponta Negra</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="credits">
+                <hr class="footer-divider flex-column">
+                <p>&copy; Desenvolvido por Amanda Lara e Ermesson Andrade</p>
+            </div>
+        </div>
+    </footer> 
+
+</body>
+</html>

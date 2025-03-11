@@ -1,0 +1,63 @@
+@import url('variables.css');
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    
+    .Registro {
+        width: 50%;
+    }
+
+    figure {
+        width: 50%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+.register-form {
+    width: 100%;
+}
+
+.register-form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    input {
+        margin-left: -1em;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #E5E7EB;
+        font-size: 16px;
+        font-family: 'Baloo Thambi 2';
+        color: black;
+        padding: 20px;
+    }
+
+}
+
+input[type=submit]{
+    margin-left: -1em;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #E5E7EB;
+        font-size: 16px;
+        font-family: 'Baloo Thambi 2';
+        color: black;
+}
+
+input#enviar{
+    background-color: #28598C;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
