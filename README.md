@@ -10,8 +10,9 @@ O site foi feito para refletir a vibe da Doce Sereia. Com um design simples e f√
 
 ## Link do GitHub Pages
 
-Acesse o site hospedado no GitHub Pages:  
-[Visite o site!]( erm2k8.github.io/Doce-Sereia/ )
+Acesse o site hospedado no GitHub Pages: [Clicando aqui!]( erm2k8.github.io/Doce-Sereia/ )
+
+<img src="assets/imgs/preview_image.png" alt="Imagem do Site" width="800"/>
 
 ## Tecnologias Usadas
 
